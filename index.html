@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta lang="en" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Dunder Mifflin Infinity</title>
+        <!--Custom Style and W3.CSS Framework-->
+        <link href="style.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+        <link rel="icon" type="image/x-icon" href="SteamHappy.gif" />
+
+        <style>
+            body {
+                font-family: 'Comic Sans MS';
+                padding: 1px;
+
+            }
+            .column {
+                float: left;
+                width: 25%;
+                padding: 0 10px;
+            }
+            .row{
+                background-color: white;
+            }
+            img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .center {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+            }
+            .w3-container {
+                flex-flow: row wrap;
+
+            }
+                .w3-container p {
+                    top: 100%
+                }
+            .grid {
+                display: grid;
+                gap: 1em;
+                grid-template-columns: repeat(4, 1fr);
+                grid-auto-rows: 1fr;
+
+
+            }
+            .w3-card {
+                border: 1px solid lightgray;
+                padding: 1em;
+                background-color: white;
+
+            }
+            #topheader {
+                background-color: #00B4D8;
+            }
+            #bottomrow {
+                background-color: #00B4D8
+            }
+            #cardsgrid {
+                background-color: #BBC2CC;
+            }
+            #michaelcard {
+                text-align: center;
+            }
+            #michaelpic {
+                height: 200px;
+                width: 200px;
+                border: 10px;
+                border-color: silver;
+            }
+            #dwightcard {
+                text-align: center;
+            }
+            #dwightpic {
+                height: 200px;
+                width: 200px;
+                border: 10px;
+                border-color: silver;
+            }
+            #jimpic {
+                height: 200px;
+                width: 200px;
+                border: 10px;
+                border-color: silver;
+            }
+            #pampic {
+                height: 200px;
+                width: 200px;
+                border: 10px;
+                border-color: silver;
+            }
+            .tooltip {
+                position: relative;
+                display: inline-block;
+                border-bottom: 1px dotted black;
+            }
+                .tooltip .tooltiptext {
+                    visibility: hidden;
+                    width: 125px;
+                    background-color: black;
+                    color: #fff;
+                    text-align: center;
+                    padding: 5px 0;
+                    border-radius: 6px;
+                    position: absolute;
+                    z-index: 1;
+                    left: 95%;
+                }
+                .tooltip:hover .tooltiptext {
+                    visibility: visible;
+                }
+            
+
+        </style>
+    </head>
+    <body>
+        <div id="topheader" class="w3-center" style="padding-top: 10px; padding-bottom: 20px;">
+            <h1 style="font-family: 'Comic  Sans MS'"><b>DUNDER MIFFLIN INFINITY</b></h1>
+            <h4 style="font-family: 'Comic Sans MS'">Your Virtual Paper Store!</h4>
+            <h2 style="font-family: 'Comic Sans MS'">Meet Our Team</h2>
+        </div>
+        <div id="cardsgrid" class="grid">
+            <div id="michaelcard" class="w3-card w3-hover-shadow w3-center tooltip" style="max-width: 300px;" >
+                <span class="tooltiptext">
+                    Michael Scott has been manager for 15 years. An avid lover of figs and comedy. Michael brings the office together
+                    as a family. We sure hope he doesn't leave two seasons before the finale!
+                </span>
+                <img id="michaelpic" src="YippeeCat.gif" alt="Yippee Cat" style="max-width: 80%;" />
+                <div class ="w3-container">
+                    <h4><b>Michael G. Scott</b></h4>
+                    <p>Regional Manger, Dunder Mifflin Scranton</p>
+                    <p>Just a guy on a train with no answers</p>
+                </div>
+            </div>
+            <div id="dwightcard" class="w3-card w3-hover-shadow w3-center tooltip" style="max-width: 300px;" >
+                <span class="tooltiptext">
+                    Dwight Schrute is the trusty number two at the Scranton branch. Determined. Worker. Intense.
+                    Good Worker. Hard Worker. Terrific.
+                </span>
+                <img id="dwightpic" src="NerdyCat.jpg" alt="Nerdy Cat" style="max-width: 80%;" />
+                <div class ="w3-container">
+                    <h4><b>Dwight K. Schrute</b></h4>
+                    <p>Assistant <s>to the</s> Regional Manager, D.M. Scranton</p>
+                    <p>Bears. Beets. Battelstar Galactica.</p>
+                </div>
+            </div>
+            <div id="jimcard" class="w3-card w3-hover-shadow w3-center tooltip" style="max-width: 300px;" >
+                <span class="tooltiptext">
+                    Jim Halpert is just a regular guy who's in love with the receptionist. He loves sports and Philadelphia - hopefully he
+                    doesn't move there and attempt to start his own sports marketing firm!
+                </span>
+                <img id="jimpic" src="StaringCat.gif" alt="Staring Cat" style="max-width: 80%;" />
+                <div class ="w3-container">
+                    <h4><b>Jim "Big Tuna" Halpert</b></h4>
+                    <p>Voted Most Likely to Date the Receptionist</p>
+                    <p>*stares at camera, menacingly*</p>
+                </div>
+            </div>
+            <div id="pamcard" class="w3-card w3-hover-shadow w3-center tooltip" style="max-width: 300px;" >
+                <span class="tooltiptext">
+                    Pam Beesly is the bright, smiling face people see first when they walk into the office.
+                    I would never say this to her face, but she is a wonderful person and a gifted artist.
+                </span>
+                <img id="pampic" src="HappyCat.jpg" alt="Happy Cat" style="max-width: 80%;" />
+                <div class ="w3-container">
+                    <h4><b>Pam Beesly</b></h4>
+                    <p>Arpiring Artist and Mixed Berry Yogurt Enthusiast</p>
+                    <p>You have no idea how high she can fly</p>
+                </div>
+            </div>
+        </div>
+        <div id="bottomrow" class="w3-center w3-padding-16">
+            <img id="DMLogo" src="DMLogo.webp" style="padding-top: 10px;" />
+            <h3>The People Person's Paper People!</h3>
+            <h4>A Great Scott Web Production</h4>
+            <h5>Current Date and Time:</h5>
+            <span id="datetime"></span>
+        </div>
+        <script>
+            function updateDateTime() {
+                const now = new Date();
+                const currentDateTime = now.toLocaleString();
+                document.querySelector('#datetime').textContent = currentDateTime;
+            }
+            setInterval(updateDateTime, 1000);
+        </script>
+    </body>
+</html>
